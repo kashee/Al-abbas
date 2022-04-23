@@ -1,0 +1,10 @@
+
+which php // check php path
+echo getcwd();//check file path which have to print
+
+crontab -r // remove all current cron
+crontab -e // add new cron tab
+crontab -l // list cron tab
+
+* * * * * /opt/bitnami/php/bin/php /opt/bitnami/apache2/htdocs/cronjob.php // at each mint
+0 10 * * * /opt/bitnami/php/bin/php /opt/bitnami/apache2/htdocs/cronjob.php // daily 10 AM
